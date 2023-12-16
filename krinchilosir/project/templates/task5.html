@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>multi table</title>
+</head>
+<body style="background-color:powderblue;">
+<center>
+
+<form action="task5" method="post">
+    {% csrf_token %}
+    <h3><u>MULTIPLICATION NUMBER :</u></h3><input type="text" placeholder="multliplication number :" name="x"><br>
+    <h3><u>RANGE :</u></h3><input type="text" placeholder="range of multiplication :" name="y"><br><br>
+    <input type="submit" value="CLICK FOR TABLE
+
+">
+
+</form>
+
+{% for i in name %}
+<h1 style="color:green;">{{i}}</h1>
+{% endfor %}
+
+    </center>
+</body>
+</html>

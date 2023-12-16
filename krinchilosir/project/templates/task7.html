@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ODD NBR RVRS</title>
+</head>
+<body style="background-color:powderblue;">
+<center>
+
+<form action="task7" method="post">
+    {% csrf_token %}
+    <h3><u>STARTING NUMBER :</u></h3><input type="text" placeholder="Starting Number :" name="x"><br>
+    <h3><u>ENDING NUMBER :</u></h3><input type="text" placeholder="ending number :" name="y"><br><br>
+    <input type="submit" value="CLICK">
+
+
+</form>
+
+{% for i in na %}
+<h1 style="color:green;">{{i}}</h1>
+{% endfor %}
+    </center>
+</body>
+</html>

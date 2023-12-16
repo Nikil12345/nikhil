@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+<h1>this is HOME page</h1>
+<form action="contact" method="post">
+    {% csrf_token %}
+    <input type="text" name="n1">
+    <input type="text" name="n2">
+    <input type="submit" value="CLICK">
+
+</form>
+<input type="text" value="{{a}} {{name}}">
+
+<a href="{% url 'a' 'thaha' %}">next</a>
+</body>
+</html>

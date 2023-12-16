@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>start btwn end</title>
+</head>
+<body>
+<h1>SERIES ..!?</h1>
+<form action="task4" method="post">
+    {% csrf_token %}
+    STARTING NUMBER :<input type="text" name="x"><br><br>
+    ENDING NUMBER :<input type="text" name="y"><br><br>
+    <input type="submit" value="CLICK">
+
+</form>
+<br>
+
+{% for i  in name %}
+
+<h2>{{ i }}</h2>
+{% endfor %}
+
+
+</body>
+</html>
